@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 String address = jsonObj.getString("name") + ", " + sys.getString("country");
 
 
-                /* Populating extracted data into our views */
+                // day du lieu len view
                 addressTxt.setText(address);
                 updated_atTxt.setText(updatedAtText);
                 statusTxt.setText(weatherDescription.toUpperCase());
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
                 pressureTxt.setText(pressure);
                 humidityTxt.setText(humidity);
 
-                /* Views populated, Hiding the loader, Showing the main design */
+                // mo design
                 findViewById(R.id.loader).setVisibility(View.GONE);
                 findViewById(R.id.mainContainer).setVisibility(View.VISIBLE);
 
